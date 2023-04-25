@@ -1,12 +1,11 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 import logo from '../Images/logo.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { useRef } from 'react';
 import './Navbar.css';
 import { Link } from 'react-scroll';
 import { Link as LinkToComp } from 'react-router-dom';
-import { useState } from 'react';
+
 
 function Navbar(props) {
 	const navRef = useRef();
@@ -20,18 +19,18 @@ function Navbar(props) {
 			<div className='home-logo navbar-title navbar-item'>
 
 			<LinkToComp to='/'>
-			<img className='home-logo' src={logo}/>
+			<img className='home-logo' src={logo} alt='burrito la chiquita logo'/>
 			</LinkToComp>
 			</div>
 
 			<nav className='nav-section' ref={navRef}>
-				<a className='navbar-item'>
-					<LinkToComp to='/menu' onClick={showNavbar}>Menu</LinkToComp>
+				<a className='navbar-item' href="#/">
+					<LinkToComp hrefLang='' to='/menu' onClick={showNavbar}>Menu</LinkToComp>
 				</a>
-				<a className='navbar-item'>
+				<a className='navbar-item' href="#/">
 					<LinkToComp to='/gallery'>Gallery</LinkToComp>
 				</a>
-				<a className='navbar-item'>
+				<a className='navbar-item' href="#/">
 					<Link
 						activeClass='active'
 						to='about'
@@ -41,7 +40,7 @@ function Navbar(props) {
 						About Us
 					</Link>
 				</a>
-				<a className='navbar-item'>
+				<a className='navbar-item' href="#/">
 					<Link
 						activeClass='active'
 						to='location'

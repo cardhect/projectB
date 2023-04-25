@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../Images/logo.png';
 import facebook from '../Images/facebook.png';
-import twitter from '../Images/twitter.png';
-import insta from '../Images/instagram.png';
 import './Footer.css';
 
 export default class Footer extends Component {
