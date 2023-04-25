@@ -1,8 +1,6 @@
-import React, { Component } from "react";
 import blcEnhanced from "../Images/BurritoLaChiq-enhanced.jpeg";
 import mexicoChef from "../Images/mexican-chef.jpeg";
 import "./Section.css";
-import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import Location from "./Location";
 
